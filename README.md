@@ -21,7 +21,33 @@ If y represents the dependent variable and x the independent variable, this rela
 
 # Program
 
+```python
+
+# Developed by
+# Register Number: 212220230049
+# Name: P.Suganya
+
+import math
+import numpy as np
+x=[25, 28, 35, 32, 31, 36, 29, 38, 34, 32]
+y=[43, 46, 49, 41, 36, 32, 31, 30, 33, 39]
+sx=0
+sy=0
+sxy=0
+sx2=0
+sy2=0
+for i in range(0,10):
+    sx=sx+x[i]
+    sy=sy+y[i]
+    sxy=sxy+x[i]*y[i]
+    sx2=sx2+x[i]**2
+    sy2=sy2+y[i]**2
+    N=10
+r=(N*sxy-sx*sy)/(math.sqrt(N*sx2-sx**2)*math.sqrt(N*sy2-sy**2))
+print("The Correlation Coefficient is %0.3f"%r)
+
+```
+# Output : 
 
 
-
-# Results and Output : 
+# Result:
